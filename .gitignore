@@ -19,3 +19,39 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw*
+
+/www/*
+
+# Created by https://www.gitignore.io/api/vuejs,cordova,visualstudiocode
+# Edit at https://www.gitignore.io/?templates=vuejs,cordova,visualstudiocode
+
+### Cordova ###
+# gitignore template for the Cordova framework
+# website: https://cordova.apache.org/
+#
+# Recommended template: Node.gitignore
+
+# App platform binaries and built files
+/platforms/*
+
+# Optional to ignore plugin Git clones
+/plugins/
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+
+### Vuejs ###
+node_modules
+.DS_Store
+docs/_book
+test/
+
+# End of https://www.gitignore.io/api/vuejs,cordova,visualstudiocode
