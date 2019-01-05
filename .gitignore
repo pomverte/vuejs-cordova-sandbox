@@ -20,7 +20,7 @@ yarn-error.log*
 *.sln
 *.sw*
 
-/www/*
+/www/
 
 # Created by https://www.gitignore.io/api/vuejs,cordova,visualstudiocode
 # Edit at https://www.gitignore.io/?templates=vuejs,cordova,visualstudiocode
