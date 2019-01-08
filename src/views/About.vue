@@ -1,9 +1,88 @@
 <template>
   <div class="container">
-    <h1>This is an about page</h1>
-    <b-jumbotron header="Bootstrap Vue" lead="Bootstrap 4 Components for Vue.js 2" >
-      <p>For more information visit website</p>
-      <b-btn variant="primary" href="https://bootstrap-vue.js.org/docs/components/jumbotron">More Info</b-btn>
-    </b-jumbotron>
+
+    <!-- adulte ceinture bleue -->
+    <b-card-group deck>
+      <b-card title="Adulte Ceinture Bleue 00"
+              img-src="https://picsum.photos/600/300/?image=25"
+              img-alt="Image"
+              img-top
+              tag="article"
+              style="max-width: 20rem;"
+              class="mb-2">
+        <b-list-group flush>
+          <b-list-group-item href="#">Techniques de base</b-list-group-item>
+          <b-list-group-item href="#">Clés</b-list-group-item>
+          <b-list-group-item href="#">Chiem Luoc</b-list-group-item>
+          <b-list-group-item href="#">Contre-attaques</b-list-group-item>
+          <b-list-group-item href="#">Don Chan</b-list-group-item>
+          <b-list-group-item href="#">Roulades</b-list-group-item>
+          <b-list-group-item href="#">Pompes</b-list-group-item>
+        </b-list-group>
+        <div slot="footer">
+          <small class="text-muted">Nombres de pratiquants : 30</small>
+        </div>
+      </b-card>
+      <b-card title="Adulte Ceinture Bleue 01"
+              img-src="https://picsum.photos/600/300/?image=41"
+              img-alt="Image"
+              img-top
+              tag="article"
+              style="max-width: 20rem;"
+              class="mb-2">
+        <b-list-group flush>
+          <b-list-group-item href="#">Techniques de base</b-list-group-item>
+          <b-list-group-item href="#">Clés</b-list-group-item>
+          <b-list-group-item href="#">Chiem Luoc</b-list-group-item>
+          <b-list-group-item href="#">Contre-attaques</b-list-group-item>
+          <b-list-group-item href="#">Don Chan</b-list-group-item>
+          <b-list-group-item href="#">Roulades</b-list-group-item>
+          <b-list-group-item href="#">Pompes</b-list-group-item>
+        </b-list-group>
+        <div slot="footer">
+          <small class="text-muted">Nombres de pratiquants : 20</small>
+        </div>
+      </b-card>
+      <b-card title="Adulte Ceinture Bleue 02"
+              img-src="https://picsum.photos/600/300/?image=10"
+              img-alt="Image"
+              img-top
+              tag="article"
+              style="max-width: 20rem;"
+              class="mb-2">
+        <b-list-group flush>
+          <b-list-group-item href="#">Techniques de base</b-list-group-item>
+          <b-list-group-item href="#">Clés</b-list-group-item>
+          <b-list-group-item href="#">Chiem Luoc</b-list-group-item>
+          <b-list-group-item href="#">Contre-attaques</b-list-group-item>
+          <b-list-group-item href="#">Don Chan</b-list-group-item>
+          <b-list-group-item href="#">Roulades</b-list-group-item>
+          <b-list-group-item href="#">Pompes</b-list-group-item>
+        </b-list-group>
+        <div slot="footer">
+          <small class="text-muted">Nombres de pratiquants : 20</small>
+        </div>
+      </b-card>
+      <b-card title="Adulte Ceinture Bleue 03"
+              img-src="https://picsum.photos/600/300/?image=15"
+              img-alt="Image"
+              img-top
+              tag="article"
+              style="max-width: 20rem;"
+              class="mb-2">
+        <b-list-group flush>
+          <b-list-group-item href="#">Techniques de base</b-list-group-item>
+          <b-list-group-item href="#">Clés</b-list-group-item>
+          <b-list-group-item href="#">Chiem Luoc</b-list-group-item>
+          <b-list-group-item href="#">Contre-attaques</b-list-group-item>
+          <b-list-group-item href="#">Don Chan</b-list-group-item>
+          <b-list-group-item href="#">Roulades</b-list-group-item>
+          <b-list-group-item href="#">Pompes</b-list-group-item>
+        </b-list-group>
+        <div slot="footer">
+          <small class="text-muted">Nombres de pratiquants : 10</small>
+        </div>
+      </b-card>
+    </b-card-group>
   </div>
 </template>
