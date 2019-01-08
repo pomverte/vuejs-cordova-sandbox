@@ -1,3 +1,4 @@
+<!-- ecran de notation pour un pratiquant pour un epreuve -->
 <template>
   <div class="container">
     <b-nav>

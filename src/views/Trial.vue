@@ -1,4 +1,4 @@
-<!-- -->
+<!-- ecran de notation d'une epreuve -->
 <template>
   <div class="container">
     <b-table striped hover :items="items" :fields="fields">
