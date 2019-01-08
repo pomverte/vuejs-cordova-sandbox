@@ -21,7 +21,7 @@ export default {
     return {
       trial: "Vat",
       pratiquant: "Leonard Leakey Hofstadter",
-      fields: [{ key: 'nom', label: 'Jury' }, "note"],
+      fields: [{ key: "nom", label: "Jury" }, "note"],
       items: [
         { nom: "Mika", note: "" },
         { nom: "Zazie", note: "" },
