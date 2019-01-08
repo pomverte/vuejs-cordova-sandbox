@@ -16,7 +16,7 @@ export default new Router({
       path: "/test",
       name: "test",
       component: BootstrapTest
-    },      
+    },
     {
       path: "/about",
       name: "about",
