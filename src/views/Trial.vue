@@ -16,7 +16,7 @@
 export default {
   data() {
     return {
-      fields: ["ordre", "nom", "note", "action"],
+      fields: ["ordre", { key: "nom", label: "Pratiquant"}, "note", "action"],
       items: [
         { nom: "Leonard Leakey Hofstadter", note: "10" },
         { nom: "Sheldon Cooper", note: "11" },
