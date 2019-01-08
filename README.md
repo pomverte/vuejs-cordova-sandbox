@@ -82,3 +82,5 @@ cd $ANDROID_HOME/tools/bin
 ./sdkmanager --licenses
 sdkmanager.bat --licenses
 ```
+
+Note : on Windows, ANDROID_HOME = C:\Users\username\AppData\Local\Android\Sdk
