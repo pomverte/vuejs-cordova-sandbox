@@ -1,6 +1,9 @@
 <!-- ecran de notation d'une epreuve -->
 <template>
   <div class="container">
+    <b-nav>
+      <b-nav-item disabled>Epreuve de {{ trial }}</b-nav-item>
+    </b-nav>
     <b-table striped hover :items="items" :fields="fields">
       <template slot="ordre" slot-scope="row">
         {{ row.index }}
@@ -13,9 +16,12 @@
 </template>
 
 <script>
+import router from "../router";
+
 export default {
   data() {
     return {
+      trial: "Vat",
       fields: ["ordre", { key: "nom", label: "Pratiquant" }, "note", "action"],
       items: [
         { nom: "Leonard Leakey Hofstadter", note: "10" },
@@ -33,7 +39,10 @@ export default {
   },
   methods: {
     ratePratiquant: function(pratiquant) {
-      alert("TODO Evaluer " + pratiquant.nom);
+      router.push({
+        name: "rating",
+        params: { trial: this.trial, pratiquant: pratiquant.nom }
+      });
     }
   }
 };

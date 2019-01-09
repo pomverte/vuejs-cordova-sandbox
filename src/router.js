@@ -21,7 +21,8 @@ export default new Router({
     {
       path: "/rating",
       name: "rating",
-      component: Rating
+      component: Rating,
+      props: true
     },
     {
       path: "/about",
