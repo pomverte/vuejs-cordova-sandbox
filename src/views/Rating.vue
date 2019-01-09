@@ -6,7 +6,7 @@
     </b-nav>
     <b-table striped hover :items="items" :fields="fields">
       <template slot="note" slot-scope="data">
-        <b-form-input v-model="data.item.note" type="text"></b-form-input>
+        <b-form-input v-model="data.item.note" type="number" min="8" max="14" step="0.5"></b-form-input>
       </template>
     </b-table>
     <b-button variant="">Annuler</b-button> |
