@@ -2,7 +2,7 @@
 <template>
   <div class="container">
     <b-nav>
-      <b-nav-item disabled>{{ pratiquant }} - {{ trial }}</b-nav-item>
+      <b-nav-item disabled><h4>{{ pratiquant }} - {{ trial }}</h4></b-nav-item>
     </b-nav>
     <b-table striped hover :items="items" :fields="fields">
       <template slot="note" slot-scope="data">
