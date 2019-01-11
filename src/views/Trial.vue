@@ -6,7 +6,7 @@
     </b-nav>
     <b-table striped hover :items="items" :fields="fields">
       <template slot="ordre" slot-scope="row">
-        {{ row.index }}
+        {{ row.index + 1 }}
       </template>
       <template slot="action" slot-scope="row">
         <b-button @click="ratePratiquant(row.item)" variant="outline-primary">Modifier</b-button>
