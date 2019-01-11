@@ -25,7 +25,7 @@ export default {
     return {
       items: [
         {
-          rank: "CB00",
+          rank: "Ceinture Bleue 00",
           trials: [
             "Techniques de base",
             "Clés",
@@ -39,7 +39,7 @@ export default {
           picture: "https://picsum.photos/600/300/?image=25"
         },
         {
-          rank: "CB01",
+          rank: "Ceinture Bleue 01",
           trials: [
             "Techniques de base",
             "Clés",
@@ -55,7 +55,7 @@ export default {
           picture: "https://picsum.photos/600/300/?image=27"
         },
         {
-          rank: "CB02",
+          rank: "Ceinture Bleue 02",
           trials: [
             "Techniques de base",
             "Clés",
