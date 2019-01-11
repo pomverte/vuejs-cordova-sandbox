@@ -8,6 +8,7 @@ import Rank from "./views/Rank.vue";
 Vue.use(Router);
 
 export default new Router({
+  //mode: 'history',
   routes: [
     {
       path: "/",
