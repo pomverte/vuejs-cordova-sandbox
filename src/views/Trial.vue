@@ -19,9 +19,9 @@
 import router from "../router";
 
 export default {
+  props: ["trial"],
   data() {
     return {
-      trial: "Vat",
       fields: ["ordre", { key: "nom", label: "Pratiquant" }, "note", "action"],
       items: [
         { nom: "Leonard Leakey Hofstadter", note: "10" },
