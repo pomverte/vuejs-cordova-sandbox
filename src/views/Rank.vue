@@ -62,7 +62,7 @@ export default {
             "Chiem Luoc",
             "Contre-attaques",
             "Thap Thu Quyen",
-            "Son Vat Mot",
+            "Son Luyen Vat Mot",
             "Don Chan",
             "Roulades",
             "Pompes"
