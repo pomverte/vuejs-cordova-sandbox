@@ -2,7 +2,7 @@
 <template>
   <div class="container">
     <b-nav>
-      <b-nav-item disabled><h4>{{ pratiquant }} - {{ trial }}</h4></b-nav-item>
+      <b-nav-item disabled><h4>{{ this.$route.params.pratiquant }} - {{ this.$route.params.trial }}</h4></b-nav-item>
     </b-nav>
     <b-table striped hover :items="items" :fields="fields">
       <template slot="note" slot-scope="data">
@@ -17,7 +17,6 @@
 
 <script>
 export default {
-  props: ["trial", "pratiquant"],
   data() {
     return {
       fields: [{ key: "nom", label: "Jury" }, "note"],

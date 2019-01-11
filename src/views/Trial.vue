@@ -2,7 +2,7 @@
 <template>
   <div class="container">
     <b-nav>
-      <b-nav-item disabled><h4>Epreuve de {{ trial }}</h4></b-nav-item>
+      <b-nav-item disabled><h4>Epreuve de {{ this.$route.params.trial }}</h4></b-nav-item>
     </b-nav>
     <b-table striped hover :items="items" :fields="fields">
       <template slot="ordre" slot-scope="row">
@@ -19,7 +19,6 @@
 import router from "../router";
 
 export default {
-  props: ["trial"],
   data() {
     return {
       fields: ["ordre", { key: "nom", label: "Pratiquant" }, "note", "action"],
@@ -41,7 +40,7 @@ export default {
     ratePratiquant: function(pratiquant) {
       router.push({
         name: "rating",
-        params: { trial: this.trial, pratiquant: pratiquant.nom }
+        params: { trial: this.$route.params.trial, pratiquant: pratiquant.nom }
       });
     }
   }

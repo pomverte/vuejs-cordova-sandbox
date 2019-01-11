@@ -22,14 +22,12 @@ export default new Router({
     {
       path: "/trial",
       name: "trial",
-      component: Trial,
-      props: true
+      component: Trial
     },
     {
       path: "/rating",
       name: "rating",
-      component: Rating,
-      props: true
+      component: Rating
     },
     {
       path: "/about",
