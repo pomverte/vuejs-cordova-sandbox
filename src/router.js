@@ -3,7 +3,7 @@ import Router from "vue-router";
 import Home from "./views/Home.vue";
 import Rating from "./views/Rating.vue";
 import Trial from "./views/Trial.vue";
-import Rank from "./views/Rank.vue";
+import Grades from "./views/Grades.vue";
 
 Vue.use(Router);
 
@@ -16,9 +16,9 @@ export default new Router({
       component: Home
     },
     {
-      path: "/ranks",
-      name: "ranks",
-      component: Rank
+      path: "/grades",
+      name: "grades",
+      component: Grades
     },
     {
       path: "/trial",
