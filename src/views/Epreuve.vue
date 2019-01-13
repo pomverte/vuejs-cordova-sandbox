@@ -2,7 +2,7 @@
 <template>
   <div class="container">
     <b-nav>
-      <b-nav-item disabled><h4>Epreuve de {{ this.$route.params.trial }}</h4></b-nav-item>
+      <b-nav-item disabled><h4>Epreuve de {{ this.$route.params.epreuve }}</h4></b-nav-item>
     </b-nav>
     <b-table striped hover :items="items" :fields="fields">
       <template slot="ordre" slot-scope="row">
