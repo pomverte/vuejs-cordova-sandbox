@@ -21,12 +21,12 @@ export default new Router({
       component: Grades
     },
     {
-      path: "/epreuve",
+      path: "/grades/:gid/epreuve",
       name: "epreuve",
       component: Epreuve
     },
     {
-      path: "/notation",
+      path: "/grades/:gid/epreuve/notation",
       name: "notation",
       component: Notation
     },
