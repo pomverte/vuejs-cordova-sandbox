@@ -2,9 +2,9 @@
 <template>
   <div class="container">
     <b-nav>
-      <b-nav-item disabled><h4>{{ this.$route.params.pratiquant }} - {{ this.$route.params.trial }}</h4></b-nav-item>
+      <b-nav-item disabled><h4>{{ this.$route.params.pratiquant }} - {{ this.$route.params.epreuve }}</h4></b-nav-item>
     </b-nav>
-    <b-table striped hover :items="items" :fields="fields">
+    <b-table striped hover :items="juges" :fields="fields">
       <template slot="note" slot-scope="data">
         <b-form-input v-model="data.item.note" type="number" min="8" max="14" step="0.5"></b-form-input>
       </template>
@@ -20,7 +20,7 @@ export default {
   data() {
     return {
       fields: [{ key: "nom", label: "Jury" }, "note"],
-      items: [
+      juges: [
         { nom: "Mika", note: "" },
         { nom: "Zazie", note: "" },
         { nom: "Jenifer", note: "" },

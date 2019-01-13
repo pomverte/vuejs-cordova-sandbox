@@ -1,7 +1,7 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/Home.vue";
-import Rating from "./views/Rating.vue";
+import Notation from "./views/Notation.vue";
 import Epreuve from "./views/Epreuve.vue";
 import Grades from "./views/Grades.vue";
 
@@ -26,9 +26,9 @@ export default new Router({
       component: Epreuve
     },
     {
-      path: "/rating",
-      name: "rating",
-      component: Rating
+      path: "/notation",
+      name: "notation",
+      component: Notation
     },
     {
       path: "/about",

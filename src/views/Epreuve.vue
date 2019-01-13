@@ -4,7 +4,7 @@
     <b-nav>
       <b-nav-item disabled><h4>Epreuve de {{ this.$route.params.epreuve }}</h4></b-nav-item>
     </b-nav>
-    <b-table striped hover :items="items" :fields="fields">
+    <b-table striped hover :items="pratiquants" :fields="fields">
       <template slot="ordre" slot-scope="row">
         {{ row.index + 1 }}
       </template>
@@ -22,7 +22,7 @@ export default {
   data() {
     return {
       fields: ["ordre", { key: "nom", label: "Pratiquant" }, "note", "action"],
-      items: [
+      pratiquants: [
         { nom: "Leonard Leakey Hofstadter", note: "10" },
         { nom: "Sheldon Cooper", note: "11" },
         { nom: "Penny", note: "14" },
@@ -39,8 +39,11 @@ export default {
   methods: {
     ratePratiquant: function(pratiquant) {
       router.push({
-        name: "rating",
-        params: { trial: this.$route.params.trial, pratiquant: pratiquant.nom }
+        name: "notation",
+        params: {
+          epreuve: this.$route.params.epreuve,
+          pratiquant: pratiquant.nom
+        }
       });
     }
   }
