@@ -35,6 +35,24 @@
         "hwolowitz": true,
         "rkoothrappali": true
       }
+    },
+    "cb02": {
+      "nom": "Ceinture Bleue 2eme CAP",
+      "image": "https://picsum.photos/600/300/?image=31",
+      "epreuves": {
+        "ttq": {
+          "nom": "Thap Thu Quyen"
+        },
+        "slv1": {
+          "nom": "Son Luyen Vat Mot"
+        }
+      },
+      "pratiquants": {
+        "lwinkle": true,
+        "brostenkowski": true,
+        "affowler": true,
+        "sbloom": true
+      }
     }
   },
   "pratiquants": {
@@ -65,19 +83,23 @@
     },
     "lwinkle": {
       "nom": "Leslie Winkle",
-      "club": "pontault"
+      "club": "pontault",
+      "grade": "cb02"
     },
     "brostenkowski": {
       "nom": "Bernadette Rostenkowski-Wolowitz",
-      "club": "igny"
+      "club": "igny",
+      "grade": "cb02"
     },
     "affowler": {
       "nom": "Amy Farrah Fowler",
-      "club": "saint-germain"
+      "club": "saint-germain",
+      "grade": "cb02"
     },
     "sbloom": {
       "nom": "Stuart Bloom",
-      "club": "paris"
+      "club": "paris",
+      "grade": "cb02"
     },
     "esweeney": {
       "nom": "Emily Sweeney",
