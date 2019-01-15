@@ -1,14 +1,14 @@
 {
   "grades": {
     "cb00": {
-      "name": "Ceinture Bleue 0 CAP",
+      "nom": "Ceinture Bleue 0 CAP",
       "image": "https://picsum.photos/600/300/?image=25",
       "epreuves": {
         "tech2base": {
-          "name": "Techniques de base"
+          "nom": "Techniques de base"
         },
         "cles": {
-          "name": "Clés"
+          "nom": "Clés"
         }
       },
       "pratiquants": {
@@ -17,14 +17,14 @@
       }
     },
     "cb01": {
-      "name": "Ceinture Bleue 1er CAP",
+      "nom": "Ceinture Bleue 1er CAP",
       "image": "https://picsum.photos/600/300/?image=27",
       "epreuves": {
         "chienluoc": {
-          "name": "Chien Luoc"
+          "nom": "Chien Luoc"
         },
         "kmq": {
-          "name": "Khai Mon Quyen"
+          "nom": "Khai Mon Quyen"
         }
       },
       "pratiquants": {
