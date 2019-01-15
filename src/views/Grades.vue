@@ -30,7 +30,7 @@ export default {
           epreuves: [
             "Techniques de base",
             "Clés",
-            "Chiem Luoc",
+            "Chien Luoc",
             "Contre-attaques",
             "Don Chan",
             "Roulades",
@@ -45,7 +45,7 @@ export default {
           epreuves: [
             "Techniques de base",
             "Clés",
-            "Chiem Luoc",
+            "Chien Luoc",
             "Contre-attaques",
             "Khai Mon Quyen",
             "Son Luyen Mot",
@@ -62,7 +62,7 @@ export default {
           epreuves: [
             "Techniques de base",
             "Clés",
-            "Chiem Luoc",
+            "Chien Luoc",
             "Contre-attaques",
             "Thap Thu Quyen",
             "Son Luyen Vat Mot",
