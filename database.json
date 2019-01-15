@@ -1,0 +1,58 @@
+{
+  "grades": {
+    "cb00": {
+      "name": "Ceinture Bleue 0 CAP",
+      "image": "https://picsum.photos/600/300/?image=25",
+      "epreuves": {
+        "tech2base": {
+          "name": "Techniques de base"
+        },
+        "cles": {
+          "name": "Clés"
+        }
+      },
+      "pratiquants": {
+        "llhofstadter": true,
+        "scooper": true
+      }
+    },
+    "cb01": {
+      "name": "Ceinture Bleue 1er CAP",
+      "image": "https://picsum.photos/600/300/?image=27",
+      "epreuves": {
+        "chienluoc": {
+          "name": "Chien Luoc"
+        },
+        "kmq": {
+          "name": "Khai Mon Quyen"
+        }
+      },
+      "pratiquants": {
+        "penny": true,
+        "hwolowitz": true
+      }
+    }
+  },
+  "pratiquants": {
+    "llhofstadter": {
+      "nom": "Leonard Leakey Hofstadter",
+      "club": "palaiseau",
+      "grades": "cb00"
+    },
+    "scooper": {
+      "nom": "Sheldon Cooper",
+      "club": "bures",
+      "grades": "cb00"
+    },
+    "penny": {
+      "nom": "Penny",
+      "club": "paris",
+      "grades": "cb01"
+    },
+    "hwolowitz": {
+      "nom": "Howard Wolowitz",
+      "club": "sevran",
+      "grades": "cb01"
+    }
+  }
+}

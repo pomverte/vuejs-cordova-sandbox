@@ -127,6 +127,12 @@ i  Writing project information to .firebaserc...
 firebase deploy --only hosting
 ```
 
+```
+curl 'https://fir-test-7c5ed.firebaseio.com/api/grades.json?print=pretty'
+curl 'https://fir-test-7c5ed.firebaseio.com/api/grades/cb00.json?print=pretty'
+curl 'https://fir-test-7c5ed.firebaseio.com/api/grades/cb00/epreuves.json?print=pretty'
+```
+
 ## Troubleshooting
 
 Accepting Android SDK licenses :
