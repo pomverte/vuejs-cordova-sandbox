@@ -2,79 +2,36 @@
   <div class="container">
     <b-card-group columns>
       <!-- https://github.com/vuejs/vetur/issues/261#issuecomment-429217527 -->
-      <b-card v-for="grade in grades" :key="grade"
-              v-bind:title="grade.label"
+      <b-card v-for="(value, key) in grades" :key="value"
+              v-bind:title="value.nom"
               style="max-width: 20rem;"
-              v-bind:img-src="grade.image"
+              v-bind:img-src="value.image"
               img-alt="Image"
               img-top>
         <b-list-group flush>
-          <b-list-group-item v-for="it in grade.epreuves" :key="it">
-            <router-link :to="{ name: 'epreuve', params: { gid: grade.id, epreuve: it }}">{{ it }}</router-link>
+          <b-list-group-item v-for="epreuve in value.epreuves" :key="epreuve">
+            <router-link :to="{ name: 'epreuve', params: { gid: key, epreuve: zadaz }}">{{ epreuve.nom }}</router-link>
           </b-list-group-item>
         </b-list-group>
-        <b-card-footer>Nombre de pratiquants : {{ grade.nbPratiquant }}</b-card-footer>
+        <b-card-footer>Nombre de pratiquants : {{ Object.keys(value.pratiquants).length }}</b-card-footer>
       </b-card>
     </b-card-group>
   </div>
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   data() {
     return {
-      grades: [
-        {
-          id: "cb00",
-          label: "Ceinture Bleue 00",
-          epreuves: [
-            "Techniques de base",
-            "Clés",
-            "Chien Luoc",
-            "Contre-attaques",
-            "Don Chan",
-            "Roulades",
-            "Pompes"
-          ],
-          nbPratiquant: 30,
-          image: "https://picsum.photos/600/300/?image=25"
-        },
-        {
-          id: "cb01",
-          label: "Ceinture Bleue 01",
-          epreuves: [
-            "Techniques de base",
-            "Clés",
-            "Chien Luoc",
-            "Contre-attaques",
-            "Khai Mon Quyen",
-            "Son Luyen Mot",
-            "Don Chan",
-            "Roulades",
-            "Pompes"
-          ],
-          nbPratiquant: 20,
-          image: "https://picsum.photos/600/300/?image=27"
-        },
-        {
-          id: "cb02",
-          label: "Ceinture Bleue 02",
-          epreuves: [
-            "Techniques de base",
-            "Clés",
-            "Chien Luoc",
-            "Contre-attaques",
-            "Thap Thu Quyen",
-            "Son Luyen Vat Mot",
-            "Don Chan",
-            "Roulades",
-            "Pompes"
-          ],
-          nbPratiquant: 15,
-          image: "https://picsum.photos/600/300/?image=28"
-        }
-      ]
+      grades: null
     };
+  },
+  mounted() {
+    axios
+      .get("https://fir-test-7c5ed.firebaseio.com/api/grades.json")
+      .then(response => (this.grades = response.data));
   }
 };
 </script>
