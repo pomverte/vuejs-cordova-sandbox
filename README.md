@@ -133,6 +133,9 @@ curl 'https://fir-test-7c5ed.firebaseio.com/api/grades/cb00.json?print=pretty'
 curl 'https://fir-test-7c5ed.firebaseio.com/api/grades/cb00/epreuves.json?print=pretty'
 ```
 
+Note: don't forget firebase rules for indexes ;)
+
+
 ## Troubleshooting
 
 Accepting Android SDK licenses :
