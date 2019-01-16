@@ -13,7 +13,7 @@
             <router-link :to="{ name: 'epreuve', params: { gid: gradeKey, epreuve: epreuveKey }}">{{ epreuve.nom }}</router-link>
           </b-list-group-item>
         </b-list-group>
-        <b-card-footer>Nombre de pratiquants : {{ Object.keys(grade.pratiquants).length }}</b-card-footer>
+        <b-card-footer>Nombre d'inscrits : {{ Object.keys(grade.pratiquants).length }}</b-card-footer>
       </b-card>
     </b-card-group>
   </div>
