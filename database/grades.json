@@ -54,56 +54,5 @@
         "sbloom": true
       }
     }
-  },
-  "pratiquants": {
-    "llhofstadter": {
-      "nom": "Leonard Leakey Hofstadter",
-      "club": "palaiseau",
-      "grade": "cb00"
-    },
-    "scooper": {
-      "nom": "Sheldon Cooper",
-      "club": "bures",
-      "grade": "cb00"
-    },
-    "penny": {
-      "nom": "Penny",
-      "club": "paris",
-      "grade": "cb01"
-    },
-    "hwolowitz": {
-      "nom": "Howard Wolowitz",
-      "club": "sevran",
-      "grade": "cb01"
-    },
-    "rkoothrappali": {
-      "nom": "Raj Koothrappali",
-      "club": "fontenay",
-      "grade": "cb01"
-    },
-    "lwinkle": {
-      "nom": "Leslie Winkle",
-      "club": "pontault",
-      "grade": "cb02"
-    },
-    "brostenkowski": {
-      "nom": "Bernadette Rostenkowski-Wolowitz",
-      "club": "igny",
-      "grade": "cb02"
-    },
-    "affowler": {
-      "nom": "Amy Farrah Fowler",
-      "club": "saint-germain",
-      "grade": "cb02"
-    },
-    "sbloom": {
-      "nom": "Stuart Bloom",
-      "club": "paris",
-      "grade": "cb02"
-    },
-    "esweeney": {
-      "nom": "Emily Sweeney",
-      "club": "paris"
-    }
   }
 }

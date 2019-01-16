@@ -1,0 +1,16 @@
+{
+  "juges": {
+    "mika": {
+      "nom": "Mika"
+    },
+    "zazie": {
+      "nom": "Zazie"
+    },
+    "jenifer": {
+      "nom": "Jenifer"
+    },
+    "garou": {
+      "nom": "Garou"
+    }
+  }
+}
