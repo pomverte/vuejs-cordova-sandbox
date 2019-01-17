@@ -12,9 +12,9 @@ script:
   - npm test
   - npm run build
 
-before_deploy:
-  - npm install firebase-tools
-  - firebase use --add
+#before_deploy:
+#  - npm install firebase-tools
+#  - firebase use --add
 
 deploy:
   provider: firebase
