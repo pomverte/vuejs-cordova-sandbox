@@ -6,6 +6,9 @@ node_js:
 
 install: true
 
+script:
+  - npm run build
+
 deploy:
   provider: firebase
   project: "fir-test-7c5ed"
