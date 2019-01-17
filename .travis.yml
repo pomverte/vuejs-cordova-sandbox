@@ -5,7 +5,7 @@ install: true
 deploy:
   provider: firebase
   token:
-    secure: env.global.secure
+    secure: $secure
 env:
   global:
     secure: ALcaeokpTtW4sFliFtbZ3usoaAr/urDAtnbyfI5TtnmxtwKRGcsYyc05Yy4z6nPQ7erbSlpN7NGo2f30lLQK0bNh3eC+MbRAKQZJdyQmguR7ZlVuWvnPEDRGLQExltOHV9q2b+O5kDrZ0ldMN/Mj1sdZ4srJv1we+A7NnVcmIUctk9RYTBN5waYDRsvmcko2YJvXnwLgG3GB9p76v9JheGrck2CA74pNd9np9mdN+bTQYYtipxnW7mGcMFBmY6AeMSzXZ+s+7X7mj1mpNmGD3m8HtR+viPXZC8x2Dz+jArZ9gsXBoh52xT2uwZWWeC7c4PTNjfna4/mh1L7MNOWVYbjIuiT8dWHYHwyxSN2mUAwbeg0X6vxFp/mRHGWGEMu5nBTURCpFSn+xkAFaohrpKsAL96aWBGgtPdJYjHjsrTzbN71qs3xzvbEvEDb08xUB7IzPB+hmjN/7INLC+JyXZ2mo7Du/hc9clWPeq1nEuWVaNGCu0PPgqgPaPIz1ISd3E3ja4akA9fhDo5+bMvm/4NNjRRN/3I5GvbuZa5FyU4337CNGHueWnoFxUioUja9GJY0OqUxOI6vPWf109whDK5V4DOPOzb6BndyzcoAoLlRSjuqb7XQFrsNqd5stNiMARHZDqk02TGo+cUTj5TM36SsGXRPxggedpkk/+kVoYB8=
