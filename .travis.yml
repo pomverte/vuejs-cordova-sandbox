@@ -4,9 +4,12 @@ language: node_js
 node_js:
   - lts/*
 
-install: true
+install:
+  - npm install @vue/cli
+  - npm install
 
 script:
+  - npm test
   - npm run build
 
 deploy:
