@@ -12,6 +12,9 @@ script:
   - npm test
   - npm run build
 
+before_deploy:
+  - firebase use --add
+
 deploy:
   provider: firebase
   project: "firebase-test"
