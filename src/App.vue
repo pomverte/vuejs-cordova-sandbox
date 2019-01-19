@@ -4,9 +4,29 @@
       <router-link to="/grades">Grades</router-link> |
       <router-link to="/about">About</router-link>
     </div>
+    <div>
+      <b-button v-b-tooltip.hover @click="logout" title="Bye bye">Déconnexion</b-button>
+    </div>
     <router-view/>
   </div>
 </template>
+
+<script>
+import firebase from "firebase";
+
+export default {
+  methods: {
+    logout() {
+      firebase
+        .auth()
+        .signOut()
+        .then(() => {
+          this.$router.replace("login");
+        });
+    }
+  }
+};
+</script>
 
 <style>
 #app {
