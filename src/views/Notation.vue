@@ -16,17 +16,22 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   data() {
     return {
       fields: [{ key: "nom", label: "Jury" }, "note"],
-      juges: [
-        { nom: "Mika", note: "" },
-        { nom: "Zazie", note: "" },
-        { nom: "Jenifer", note: "" },
-        { nom: "Garou", note: "" }
-      ]
+      juges: []
     };
+  },
+  mounted() {
+    axios.get("https://fir-test-7c5ed.firebaseio.com/api/juges.json").then(
+      response =>
+        (this.juges = Object.keys(response.data).map(function(key) {
+          return { id: key, nom: response.data[key].nom, note: "" };
+        }))
+    );
   }
 };
 </script>
