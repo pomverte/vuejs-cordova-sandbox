@@ -3,6 +3,7 @@ import Router from "vue-router";
 import Notation from "./views/Notation.vue";
 import Epreuve from "./views/Epreuve.vue";
 import Grades from "./views/Grades.vue";
+import Login from "./views/Login.vue";
 
 Vue.use(Router);
 
@@ -12,6 +13,11 @@ export default new Router({
     {
       path: "/",
       redirect: "grades"
+    },
+    {
+      path: "/login",
+      name: "login",
+      component: Login
     },
     {
       path: "/grades",
