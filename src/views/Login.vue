@@ -7,6 +7,8 @@
               @dismissed="showAlert=false">
         {{ message }}
       </b-alert>
+    </div>
+    <div class="row justify-content-md-center">
       <b-card title="Connexion"
               style="max-width: 20rem;"
               img-src="https://picsum.photos/600/300/?image=2"
@@ -43,11 +45,9 @@ export default {
         .auth()
         .signInWithEmailAndPassword(this.email, this.password)
         .then(
+          // eslint-disable-next-line no-unused-vars
           user => {
-            console.log("user : " + user)
-            this.message = "Authentification réussie !";
-            this.showAlert = true;
-            this.statut = "success";
+            this.$router.push("/grades");
           },
           err => {
             this.message = "Oops. " + err.message;
