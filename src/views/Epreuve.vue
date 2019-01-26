@@ -4,7 +4,7 @@
     <b-nav>
       <b-nav-item disabled><h4>Epreuve de {{ this.$route.params.epreuve }}</h4></b-nav-item>
     </b-nav>
-    <b-table striped hover :items="toArrayList(pratiquants)" :fields="fields">
+    <b-table striped hover :items="pratiquants" :fields="fields">
       <template slot="ordre" slot-scope="row">
         {{ row.index + 1 }}
       </template>
@@ -35,13 +35,6 @@ export default {
           pratiquant: pratiquant.nom
         }
       });
-    },
-    toArrayList: function(object) {
-      // transformation de la structure de données : object => array[object]
-      var result = Object.keys(object).map(function(key) {
-        return { nom: object[key].nom, note: "" };
-      });
-      return result;
     }
   },
   mounted() {
@@ -51,7 +44,12 @@ export default {
           this.$route.params.gid +
           '"'
       )
-      .then(response => (this.pratiquants = response.data)); // .catch(error => console.log(error));
+      .then(
+        response =>
+          (this.pratiquants = Object.keys(response.data).map(function(key) {
+            return { id: key, nom: response.data[key].nom, note: "" };
+          }))
+      ); // .catch(error => console.log(error));
   }
 };
 </script>
